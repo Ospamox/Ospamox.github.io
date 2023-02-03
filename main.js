@@ -1,1 +1,1 @@
-document.write("Hy ...")
+document.write("Hi this is js ...")

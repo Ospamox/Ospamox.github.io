@@ -109,9 +109,10 @@ btnplus.addEventListener("click", function(){
           console.log(btn0.innerHTML)
           sum = btn0.innerHTML*310
           console.log("Вы заказали Биг Тейсти в количестве " + btn0.innerHTML +" "+"на суму "+ sum )
+          let result = ["Биг Тейсти ", btn0.innerHTML, sum];		
                
 		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = "5";
+		item = result;
 		tg.MainButton.show();
 	}
 });

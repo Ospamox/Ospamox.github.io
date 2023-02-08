@@ -32,7 +32,9 @@ body {
 
 .btn1 {
 	display: inline-block;
-	margin: auto;
+/*	margin: auto;*/
+    
+    margin-left:5px;
 	font-size: 20px;
 /*	padding: 6px 10px;*/
 	padding: 10px 15px;
@@ -53,6 +55,8 @@ body {
 .btn {
 	display: inline-block;
 	padding: 10px 20px;
+/*	 margin-left:20px;*/
+    margin-right: 20px;
 	border: none;
 	background: rgb(248, 168, 24);
 	border-radius: 10px;

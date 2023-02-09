@@ -112,7 +112,7 @@ btnplus.addEventListener("click", function(){
 //           let result = ["Биг Тейсти ", btn0.innerHTML, sum];		
                
 		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = "6";
+		item = "Биг Тейсти";
 		tg.MainButton.show();
 	}
 });

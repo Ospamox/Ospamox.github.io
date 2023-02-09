@@ -100,11 +100,11 @@ btnmin.addEventListener("click", function(){
 });
 
 btnplus.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 
-	}
-	else {
+// 	}
+// 	else {
           btn0.innerHTML = +btn0.innerHTML + 1;
           console.log(btn0.innerHTML)
           sum = btn0.innerHTML*310
@@ -114,7 +114,7 @@ btnplus.addEventListener("click", function(){
 		tg.MainButton.setText("Вы выбрали товар 5!");
 		item = result;
 		tg.MainButton.show();
-	}
+// 	}
 });
 
 

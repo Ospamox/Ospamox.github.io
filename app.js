@@ -1,3 +1,13 @@
+let result = [];
+let resultt = [];
+let result4 = [];
+let result3 = [];
+let result2 = [];
+let result1 = [];
+
+let all =[];
+
+
 let tg = window.Telegram.WebApp;
 
 tg.expand();
@@ -17,63 +27,217 @@ let btn6 = document.getElementById("btn6");
 
 
 
-btn1.addEventListener("click", function(){
+btnmin1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 1!");
-		item = "1";
-		tg.MainButton.show();
+          all[0] = null
+
+		  result1.splice(0,result1.length);
+          btn01.innerHTML = btn01.innerHTML - 1;
+          if (btn01.innerHTML < 0)
+		{
+			btn01.innerHTML = 0
+		}
+        sum = btn01.innerHTML*350
+        result1.push("Вы заказали Биг Мак в количестве");
+        result1.push(btn01.innerHTML);
+        result1.push(sum);
+        // console.log(result1);
+        all[0] = result1;
+        console.log(all)
+        
 	}
 });
 
-btn2.addEventListener("click", function(){
+btnplus1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 2!");
-		item = "2";
-		tg.MainButton.show();
+          all[0] = null
+
+		  result1.splice(0,result1.length);
+          btn01.innerHTML = +btn01.innerHTML + 1;
+          sum = btn01.innerHTML*350
+          result1.push("Вы заказали Биг Мак в количестве");
+          result1.push(btn01.innerHTML);
+          result1.push(sum);
+          // console.log(result1);
+          all[0] = result1;
+          console.log(all);
+	  tg.MainButton.setText("Send in Telega"); 
+          tg.MainButton.show();
+        
 	}
 });
 
-btn3.addEventListener("click", function(){
+btnmin2.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 3!");
-		item = "3";
-		tg.MainButton.show();
+		 all[1] = null;
+		  result2.splice(0,result2.length);
+          btn02.innerHTML = btn02.innerHTML - 1;
+          if (btn02.innerHTML < 0)
+		{
+			btn02.innerHTML = 0
+		}
+        sum = btn02.innerHTML*270
+        result2.push("Вы заказали Гамбургер в количестве");
+        result2.push(btn02.innerHTML);
+        result2.push(sum);
+        // console.log(result2)
+        all[1] = result2;
+        console.log(all);
 	}
 });
 
-btn4.addEventListener("click", function(){
+btnplus2.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 4!");
-		item = "4";
-		tg.MainButton.show();
+		all[1] = null;
+		  result2.splice(0,result2.length);
+          btn02.innerHTML = +btn02.innerHTML + 1;
+          sum = btn02.innerHTML*270
+          result2.push("Вы заказали Гамбургер в количестве");
+          result2.push(btn02.innerHTML);
+          result2.push(sum);
+          // console.log(result2)
+		  all[1] = result2;
+          console.log(all);
 	}
 });
 
-btn5.addEventListener("click", function(){
+btnmin3.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		  all[2] = null;
+		  result3.splice(0,result3.length);
+          btn03.innerHTML = btn03.innerHTML - 1;
+          if (btn03.innerHTML < 0)
+		{
+			btn03.innerHTML = 0
+		}
+        sum = btn03.innerHTML*300
+        result3.push("Вы заказали Чизбургер в количестве");
+        result3.push(btn03.innerHTML);
+        result3.push(sum);
+        // console.log(result3);
+        all[2] = result3;
+        console.log(all);     
+	}
+});
+
+btnplus3.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		  all[2] = null;
+		  result3.splice(0,result3.length);
+          btn03.innerHTML = +btn03.innerHTML + 1;
+          sum = btn03.innerHTML*300
+          result3.push("Вы заказали Чизбургер в количестве");
+          result3.push(btn03.innerHTML);
+          result3.push(sum);
+          // console.log(result3)
+          all[2] = result3;
+          console.log(all);
+	}
+});
+
+btnmin4.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
 
 	}
 	else {
 
-		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = "5";
-		tg.MainButton.show();
+        all[3] = null;
+		// очищаем массив
+		result4.splice(0,result4.length);
+		btn04.innerHTML = btn04.innerHTML - 1;
+		if (btn04.innerHTML < 0)
+		{
+			btn04.innerHTML = 0
+		}
+        sum = btn04.innerHTML*320
+        result4.push("Вы заказали Дабли Чиз. в количестве");
+        result4.push(btn04.innerHTML);
+        result4.push(sum);
+        // console.log(result4)
+        all[3] = result4;
+        console.log(all);			
 	}
 });
 
+btnplus4.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		  all[3] = null;
+		  result4.splice(0,result4.length);
+          btn04.innerHTML = +btn04.innerHTML + 1;
+          sum = btn04.innerHTML*320
+          result4.push("Вы заказали Дабли Чиз. в количестве");
+          result4.push(btn04.innerHTML);
+          result4.push(sum);
+          // console.log(result4);
+          all[3] = result4;
+          console.log(all);
+	}
+});
+
+btnminn.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+
+	}
+	else {
+        all[4] = null;
+
+		// очищаем массив
+		resultt.splice(0,resultt.length);
+		btn00.innerHTML = btn00.innerHTML - 1;
+		if (btn00.innerHTML < 0)
+		{
+			btn00.innerHTML = 0
+		}
+        sum = btn00.innerHTML*300
+        resultt.push("Вы заказали Мак Чике в количестве");
+        resultt.push(btn00.innerHTML);
+        resultt.push(sum);
+        // console.log(resultt);
+        all[4] = resultt;
+        console.log(all);	
+	}
+});
+btnpluss.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+
+	}
+	else {
+		  all[4] = null;
+		  resultt.splice(0,resultt.length);
+          btn00.innerHTML = +btn00.innerHTML + 1;
+          sum = btn00.innerHTML*300
+          resultt.push("Вы заказали Мак Чике в количестве");
+          resultt.push(btn00.innerHTML);
+          resultt.push(sum);
+          // console.log(resultt)
+          all[4] = resultt;
+          console.log(all);
+		}
+	});
 
 btnmin.addEventListener("click", function(){
 
@@ -81,46 +245,58 @@ btnmin.addEventListener("click", function(){
 	// console.log('Hello, World!');
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
-		console.log('Hello, World!');
+		
 	}
 	else {
+		all[5] = null;
+		// очищаем массив
+		result.splice(0,result.length);
 		btn0.innerHTML = btn0.innerHTML - 1;
 		if (btn0.innerHTML < 0)
 		{
 			btn0.innerHTML = 0
 		}
-        console.log(btn0.innerHTML)
         sum = btn0.innerHTML*310
-        console.log("Вы заказали Биг Тейсти в количестве " + btn0.innerHTML +" "+"на суму "+ sum )
-		// tg.MainButton.setText("Вы выбрали товар 6!");
-		// item = "6";
-		// tg.MainButton.show();
+        result.push("Вы заказали Биг Тейсти в количестве");
+        result.push(btn0.innerHTML);
+        result.push(sum);
+        // console.log(result)
+		all[5] = result;
+        console.log(all);
+		
 	}
  	
 });
 
 btnplus.addEventListener("click", function(){
-// 	if (tg.MainButton.isVisible) {
-// 		tg.MainButton.hide();
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
 
-// 	}
-// 	else {
+	}
+	else {
+		  all[5] = null;
+		  result.splice(0,result.length);
           btn0.innerHTML = +btn0.innerHTML + 1;
-          console.log(btn0.innerHTML)
           sum = btn0.innerHTML*310
-          console.log("Вы заказали Биг Тейсти в количестве " + btn0.innerHTML +" "+"на суму "+ sum )
-          let result = ["Биг Тейсти ", btn0.innerHTML, sum];		
-               
-		tg.MainButton.setText("Вы выбрали товар 5!");
-		item = result;
-		tg.MainButton.show();
-// 	}
+          // console.log("Вы заказали Биг Тейсти в количестве " + btn0.innerHTML +" "+"на суму "+ sum )
+
+          result.push("Вы заказали Биг Тейсти в количестве");
+          result.push(btn0.innerHTML);
+          result.push(sum);
+          // console.log(result)
+          all[5] = result;
+          console.log(all);
+          
+
+		// tg.MainButton.setText("Вы выбрали товар 5!"); 
+		// item = "5";
+		// tg.MainButton.show();
+	}
 });
 
 
-
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+	tg.sendData(all);
 });
 
 let usercard = document.getElementById("usercard");

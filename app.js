@@ -296,6 +296,7 @@ btnplus.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	all = JSON.stringify(all);
 	tg.sendData(all);
 });
 

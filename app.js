@@ -28,10 +28,10 @@ let btn6 = document.getElementById("btn6");
 
 
 btnmin1.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
           all[0] = null
 
 		  result1.splice(0,result1.length);
@@ -47,15 +47,17 @@ btnmin1.addEventListener("click", function(){
         // console.log(result1);
         all[0] = result1;
         console.log(all)
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
         
-	}
+// 	}
 });
 
 btnplus1.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
           all[0] = null
 
 		  result1.splice(0,result1.length);
@@ -70,7 +72,7 @@ btnplus1.addEventListener("click", function(){
 	  tg.MainButton.setText("Send in Telega"); 
           tg.MainButton.show();
         
-	}
+// 	}
 });
 
 btnmin2.addEventListener("click", function(){

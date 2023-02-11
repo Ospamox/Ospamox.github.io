@@ -76,10 +76,10 @@ btnplus1.addEventListener("click", function(){
 });
 
 btnmin2.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
 		 all[1] = null;
 		  result2.splice(0,result2.length);
           btn02.innerHTML = btn02.innerHTML - 1;
@@ -94,14 +94,14 @@ btnmin2.addEventListener("click", function(){
         // console.log(result2)
         all[1] = result2;
         console.log(all);
-	}
+// 	}
 });
 
 btnplus2.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
 		all[1] = null;
 		  result2.splice(0,result2.length);
           btn02.innerHTML = +btn02.innerHTML + 1;
@@ -110,16 +110,18 @@ btnplus2.addEventListener("click", function(){
           result2.push(btn02.innerHTML);
           result2.push(sum);
           // console.log(result2)
-		  all[1] = result2;
+	  all[1] = result2;
           console.log(all);
-	}
+	  tg.MainButton.setText("Send in Telega"); 
+          tg.MainButton.show();
+// 	}
 });
 
 btnmin3.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
 		  all[2] = null;
 		  result3.splice(0,result3.length);
           btn03.innerHTML = btn03.innerHTML - 1;
@@ -133,15 +135,17 @@ btnmin3.addEventListener("click", function(){
         result3.push(sum);
         // console.log(result3);
         all[2] = result3;
-        console.log(all);     
-	}
+        console.log(all); 
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
+// 	}
 });
 
 btnplus3.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
 		  all[2] = null;
 		  result3.splice(0,result3.length);
           btn03.innerHTML = +btn03.innerHTML + 1;
@@ -152,15 +156,17 @@ btnplus3.addEventListener("click", function(){
           // console.log(result3)
           all[2] = result3;
           console.log(all);
-	}
+	 tg.MainButton.setText("Send in Telega"); 
+         tg.MainButton.show(); 
+// 	}
 });
 
 btnmin4.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 
-	}
-	else {
+// 	}
+// 	else {
 
         all[3] = null;
 		// очищаем массив
@@ -176,15 +182,17 @@ btnmin4.addEventListener("click", function(){
         result4.push(sum);
         // console.log(result4)
         all[3] = result4;
-        console.log(all);			
-	}
+        console.log(all);
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
+// 	}
 });
 
 btnplus4.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
+// 	}
+// 	else {
 		  all[3] = null;
 		  result4.splice(0,result4.length);
           btn04.innerHTML = +btn04.innerHTML + 1;
@@ -195,15 +203,17 @@ btnplus4.addEventListener("click", function(){
           // console.log(result4);
           all[3] = result4;
           console.log(all);
-	}
+	  tg.MainButton.setText("Send in Telega"); 
+          tg.MainButton.show();
+// 	}
 });
 
 btnminn.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 
-	}
-	else {
+// 	}
+// 	else {
         all[4] = null;
 
 		// очищаем массив
@@ -219,15 +229,17 @@ btnminn.addEventListener("click", function(){
         resultt.push(sum);
         // console.log(resultt);
         all[4] = resultt;
-        console.log(all);	
-	}
+        console.log(all);
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
+// 	}
 });
 btnpluss.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 
-	}
-	else {
+// 	}
+// 	else {
 		  all[4] = null;
 		  resultt.splice(0,resultt.length);
           btn00.innerHTML = +btn00.innerHTML + 1;
@@ -238,18 +250,20 @@ btnpluss.addEventListener("click", function(){
           // console.log(resultt)
           all[4] = resultt;
           console.log(all);
-		}
+	  tg.MainButton.setText("Send in Telega"); 
+          tg.MainButton.show();
+// 		}
 	});
 
 btnmin.addEventListener("click", function(){
 
 	// this.remove()
 	// console.log('Hello, World!');
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 		
-	}
-	else {
+// 	}
+// 	else {
 		all[5] = null;
 		// очищаем массив
 		result.splice(0,result.length);
@@ -265,17 +279,19 @@ btnmin.addEventListener("click", function(){
         // console.log(result)
 		all[5] = result;
         console.log(all);
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
 		
-	}
+// 	}
  	
 });
 
 btnplus.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+// 	if (tg.MainButton.isVisible) {
+// 		tg.MainButton.hide();
 
-	}
-	else {
+// 	}
+// 	else {
 		  all[5] = null;
 		  result.splice(0,result.length);
           btn0.innerHTML = +btn0.innerHTML + 1;
@@ -288,12 +304,10 @@ btnplus.addEventListener("click", function(){
           // console.log(result)
           all[5] = result;
           console.log(all);
+	  tg.MainButton.setText("Send in Telega"); 
+          tg.MainButton.show();
           
-
-		// tg.MainButton.setText("Вы выбрали товар 5!"); 
-		// item = "5";
-		// tg.MainButton.show();
-	}
+// 	}
 });
 
 

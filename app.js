@@ -94,6 +94,8 @@ btnmin2.addEventListener("click", function(){
         // console.log(result2)
         all[1] = result2;
         console.log(all);
+	tg.MainButton.setText("Send in Telega"); 
+        tg.MainButton.show();
 // 	}
 });
 

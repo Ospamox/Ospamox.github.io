@@ -314,6 +314,7 @@ btnplus.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.initDataUnsafe
 	all = JSON.stringify(all);
 	tg.sendData(all);
 
@@ -325,7 +326,7 @@ let usercard = document.getElementById("usercard");
 let p = document.createElement("p");
 
 p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}
+${tg.initDataUnsafe.query_id}
 ${tg.initDataUnsafe.user.id}`;
 
 

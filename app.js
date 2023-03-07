@@ -315,9 +315,10 @@ btnplus.addEventListener("click", function(){
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	all = JSON.stringify(all);
-	tg.sendData(all);
+	tg.sendData(tg.initDataUnsafe);
 // 	v =tg.initDataUnsafe.iquery_id;
 // 	tg.sendData(v);
+	
 });
 
 let usercard = document.getElementById("usercard");

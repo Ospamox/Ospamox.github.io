@@ -329,7 +329,7 @@ function zapros() {
   }
 });
 }
-// zapros()
+zapros()
 all = JSON.stringify(all);
 tg.sendData(all);	
 

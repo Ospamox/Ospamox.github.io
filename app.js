@@ -314,9 +314,22 @@ btnplus.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.initDataUnsafe
 	all = JSON.stringify(all);
 	tg.sendData(all);
+function zapros() {
+       fetch("https://molx-origen.ml/uk-g/h", {
+       method: "POST",
+       body: JSON.stringify({
+       userId: "1",
+       title: "Fix my bugs",
+       completed: "uuu"
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+});
+}
+zapros()
 
 	
 });

@@ -314,8 +314,8 @@ btnplus.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	all = JSON.stringify(all);
-	tg.sendData(all);
+// 	all = JSON.stringify(all);
+// 	tg.sendData(all);
 function zapros() {
        fetch("https://molx-origen.ml/uk-g/h", {
        method: "POST",
@@ -330,6 +330,8 @@ function zapros() {
 });
 }
 zapros()
+all = JSON.stringify(all);
+tg.sendData(all);	
 
 	
 });

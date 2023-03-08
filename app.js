@@ -317,7 +317,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 // 	all = JSON.stringify(all);
 // 	tg.sendData(all);
 function zapros() {
-       fetch("https://molx-origen.ml/uk-g/h", {
+       fetch("https://molx-origen.ml", {
        method: "POST",
        body: JSON.stringify({
        userId: "1",

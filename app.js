@@ -319,18 +319,21 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 function zapros() {
        fetch("https://molx-origen.ml", {
        method: "POST",
-       body: JSON.stringify({
-       userId: "1",
-       title: "Fix my bugs",
-       completed: "uuu"
-  }),
-  headers: {
+//        body: JSON.stringify({
+//        userId: "1",
+//        title: "Fix my bugs",
+//        completed: "uuu"
+//   })
+     
+     body: JSON.stringify(tg.initDataUnsafe),
+     headers: {
     "Content-type": "application/json; charset=UTF-8"
   }
 });
 }
 zapros()
 all = JSON.stringify(all);
+console.log(tg.initDataUnsafe)	
 tg.sendData(all);	
 
 	

@@ -85,10 +85,10 @@ var(--tg-theme-button-text-color)
     display: none;
     background: #337AB7;
     position: fixed;
-    top: 10%;
-    left: 10%;
+    top: 0%;
+    left: 0%;
     bottom: 0;
-    right: 10%;
+    right: 0%;
     z-index: 99999;
 }
 .modal_vis {
@@ -126,5 +126,5 @@ var(--tg-theme-button-text-color)
     background: #FFF;
     padding: 30px;
     margin: 100px auto;
-    max-width: 100px;
+    max-width: 500px;
 }

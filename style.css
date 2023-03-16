@@ -88,7 +88,7 @@ var(--tg-theme-button-text-color)
     top: 0;
     left: 0%;
     bottom: 0;
-    right: 70%;
+    right: 50%;
     z-index: 99999;
 }
 .modal_vis {

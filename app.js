@@ -49,6 +49,7 @@ btnmin1.addEventListener("click", function(){
         console.log(all)
 	tg.MainButton.setText("Send in Telega"); 
         tg.MainButton.show();
+	tg.BackButton.hide()
         
 // 	}
 });
@@ -70,8 +71,7 @@ btnplus1.addEventListener("click", function(){
           all[0] = result1;
           console.log(all);
 	  tg.MainButton.setText("Send in Telega"); 
-          tg.MainButton.show();
-	  tg.BackButton.setText("TEST");
+          tg.MainButton.show()
 	  tg.BackButton.show();
         
 // 	}

@@ -71,6 +71,8 @@ btnplus1.addEventListener("click", function(){
           console.log(all);
 	  tg.MainButton.setText("Send in Telega"); 
           tg.MainButton.show();
+	  tg.BackButton.setText("TEST");
+	  tg.BackButton.show();
         
 // 	}
 });

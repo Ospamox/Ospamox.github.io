@@ -275,7 +275,7 @@ if (all[0][0] == "1.png")
 // когда товар равен 0, то его удаляем с модального окна
 if(all[0][2] != "0")
 {
-o.innerHTML = `${'<img src="/static/1.png"width="50" height="38"style="padding-right: 20px;">'}
+o.innerHTML = `${'<img src="1.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x' + all[0][2] + '________' +  all[0][3] +"грн."}`;
 container.appendChild(o);
 }
@@ -288,7 +288,7 @@ if (all[1][0] == "2.png")
 {
 if (all[1][2] != "0")
 {
-t.innerHTML = `${'<img src="/static/2.png"width="50" height="38"style="padding-right: 20px;">'}
+t.innerHTML = `${'<img src="2.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[1][2] + '________'+ all[1][3]+ 'грн.'}`;
 container.appendChild(t);
 }
@@ -302,7 +302,7 @@ if (all[2][0] == "3.png")
 {
 if (all[2][2] != "0")
 {
-l.innerHTML = `${'<img src="/static/3.png"width="50" height="38"style="padding-right: 20px;">'}
+l.innerHTML = `${'<img src="3.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[2][2] + '________'+ all[2][3]+ 'грн.'}`;
 container.appendChild(l);
 }
@@ -315,7 +315,7 @@ if (all[3][0] == "4.png")
 {
 if (all[3][2] != "0")
 {
-k.innerHTML = `${'<img src="/static/4.png"width="50" height="38"style="padding-right: 20px;">'}
+k.innerHTML = `${'<img src="4.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[3][2] + '________'+ all[3][3]+ 'грн.'}`;
 container.appendChild(k);
 }
@@ -330,7 +330,7 @@ if (all[5][0] == "6.png")
 {
 if (all[5][2] != "0")
 {
-m.innerHTML = `${'<img src="/static/6.png"width="50" height="38"style="padding-right: 20px;">'}
+m.innerHTML = `${'<img src="6.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[5][2] + '________'+ all[5][3]+ 'грн.'}`;
 container.appendChild(m);
 }
@@ -343,7 +343,7 @@ if (all[4][0] == "5.png")
 {
 if (all[4][2] != "0")
 {
-el.innerHTML = `${'<img src="/static/5.png"width="50" height="38"style="padding-right: 20px;">'}
+el.innerHTML = `${'<img src="5.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[4][2] + '________'+  all[4][3]+ 'грн.'}`;
 container.appendChild(el);
 }

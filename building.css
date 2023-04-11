@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham/subset-GothamPro-Medium.eot');
+    src: url('../fonts/gotham/subset-GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/subset-GothamPro-Medium.woff') format('woff'),
+        url('../fonts/gotham/subset-GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham/subset-GothamPro-Black.eot');
+    src: url('../fonts/gotham/subset-GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/subset-GothamPro-Black.woff') format('woff'),
+        url('../fonts/gotham/subset-GothamPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham/subset-GothamPro-Light.eot');
+    src: url('../fonts/gotham/subset-GothamPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/subset-GothamPro-Light.woff') format('woff'),
+        url('../fonts/gotham/subset-GothamPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham/subset-GothamPro-Bold.eot');
+    src: url('../fonts/gotham/subset-GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/subset-GothamPro-Bold.woff') format('woff'),
+        url('../fonts/gotham/subset-GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/gotham/subset-GothamPro.eot');
+    src: url('../fonts/gotham/subset-GothamPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/gotham/subset-GothamPro.woff') format('woff'),
+        url('../fonts/gotham/subset-GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Black.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Black.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Extrabld.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Extrabld.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Regular.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Semibold.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Bold.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNovaT-Thin.eot');
+    src: url('../fonts/proxima/subset-ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNovaT-Thin.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/proxima/subset-ProximaNova-Light.eot');
+    src: url('../fonts/proxima/subset-ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proxima/subset-ProximaNova-Light.woff') format('woff'),
+        url('../fonts/proxima/subset-ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html, body, .page {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Proxima Nova", sans-serif;
+    background: #f7f7f7;
+}
+
+.page {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-menu {
+    z-index: 5 ; 
+    display: block;
+    position: relative;
+}
+
+.page-menu > .content   {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.page-menu > .content > .logo   {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+}
+
+.page-menu > .content > .logo > a {
+    width: 110px;
+    height: 110px;
+    background: #000;
+    border-radius: 0px 0px 8px 8px;
+    color: #FFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Gotham Pro", sans-serif;
+    font-weight: 900;
+}
+
+.page-menu > .content > .logo > .slogan {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 700;
+}
+
+.article {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main {
+    max-width: 1230px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading {
+    font-size: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 30px;
+}

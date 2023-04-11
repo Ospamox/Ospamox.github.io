@@ -80,7 +80,6 @@ var(--tg-theme-link-color)
 var(--tg-theme-button-color)
 var(--tg-theme-button-text-color)
 */
-
 .modal {
     display: none;
     background: #337AB7;
@@ -119,12 +118,12 @@ var(--tg-theme-button-text-color)
 }
 #close_modal:hover {
     color: #FFF;
-    transform: rotate(135deg);
+/*    transform: rotate(135deg);*/
 }
 .modal_txt {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
-    background: #FFF;
+    background:#337AB7;
     padding: 30px;
     margin: 100px auto;
-    max-width: 500px;
+    max-width: 250px;
 }

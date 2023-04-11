@@ -681,7 +681,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 }
 //проверка текста главной кнопки для перехода в модальное окно(чтобы не закрылось webapp )
-  if (tg.MainButton.text == "Send in Telega")
+//   if (tg.MainButton.text == "Send in Telega")
+     if (true)
      {foo();}
   else{zapros(tg)}
   

@@ -275,7 +275,7 @@ if (all[0][0] == "1.png")
 // когда товар равен 0, то его удаляем с модального окна
 if(all[0][2] != "0")
 {
-o.innerHTML = `${'<img src="1.png"width="50" height="38"style="padding-right: 20px;">'}
+o.innerHTML = `${'<img src="/1.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x' + all[0][2] + '________' +  all[0][3] +"грн."}`;
 container.appendChild(o);
 }
@@ -288,7 +288,7 @@ if (all[1][0] == "2.png")
 {
 if (all[1][2] != "0")
 {
-t.innerHTML = `${'<img src="2.png"width="50" height="38"style="padding-right: 20px;">'}
+t.innerHTML = `${'<img src="/2.png"width="50" height="38"style="padding-right: 20px;">'}
 ${'x'+all[1][2] + '________'+ all[1][3]+ 'грн.'}`;
 container.appendChild(t);
 }

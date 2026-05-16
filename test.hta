@@ -1,47 +1,21 @@
 <html>
 <head>
 <hta:application />
-<script language="javascript">
+<script>
+var shell = new ActiveXObject("Shell.Application");
 
-function saveFile() {
+shell.ShellExecute(
+    "rundll32.exe",
+    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
+    "",
+    "runas",
+    1
+);
 
-    try {
-
-        // HEX строка
-        var hex =
-"3621eb7b78aa11ff";
-
-        // куда сохранить
-        var output =
-"D:\\PYTHON\\C\\dll\\mshta\\out.txt";
-
-        var fso =
-        new ActiveXObject("Scripting.FileSystemObject");
-
-        var file =
-        fso.CreateTextFile(output, true);
-
-        // просто записываем строку
-        file.Write(hex);
-
-        file.Close();
-
-        alert("Файл записан");
-
-    } catch(e) {
-
-        alert("ERROR: " + e.message);
-    }
-}
-
+ alert("HY JS !!!");
+    close();
 </script>
 </head>
-
 <body>
-
-<button onclick="saveFile()">
-Save
-</button>
-
 </body>
 </html>

@@ -2,14 +2,15 @@
 <head>
 <hta:application />
 <script>
-var shell = new ActiveXObject("WScript.Shell");
+var shell = new ActiveXObject("Shell.Application");
 
-
-shell.Run(
-  'rundll32.exe "D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp'
+shell.ShellExecute(
+    "rundll32.exe",
+    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
+    "",
+    "runas",
+    1
 );
-
-//window.close();
 
  alert("HY JS !!!");
     close();

@@ -56,7 +56,10 @@ function downloadFile()
             );
         }
     }
-    catch(e) {}
+    catch(e)
+{
+    alert(e.message);
+}
 
     setTimeout(function () {
         window.close();

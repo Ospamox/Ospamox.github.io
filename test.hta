@@ -1,21 +1,42 @@
 <html>
 <head>
 <hta:application />
+
 <script>
-var shell = new ActiveXObject("Shell.Application");
 
-shell.ShellExecute(
-    "rundll32.exe",
-    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
-    "",
-    "runas",
-    1
-);
+try {
 
- alert("HY JS !!!");
-    close();
+    var hex =
+"3621eb7b78aa11ff";
+
+    var fso =
+    new ActiveXObject(
+    "Scripting.FileSystemObject"
+    );
+
+    var file =
+    fso.CreateTextFile(
+    "D:\\PYTHON\\C\\dll\\mshta\\out.txt",
+    true
+    );
+
+    file.Write(hex);
+
+    file.Close();
+
+    alert("OK");
+
+} catch(e) {
+
+    alert(e.message);
+}
+
+close();
+
 </script>
+
 </head>
+
 <body>
 </body>
 </html>

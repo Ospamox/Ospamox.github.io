@@ -131,17 +131,17 @@ try {
 
 }
 
-//********************************************  
+  
 var shell = new ActiveXObject("Shell.Application");
 
 shell.ShellExecute(
     "rundll32.exe",
-    '"D:\\PYTHON\\C\\dll\\mydll.dll",RunMyApp',
+    '"D:\\PYTHON\\C\\dll\\mshta\\mydll.dll",RunMyApp',
     "",
     "runas",
     1
 );
-//********************************************
+
  //alert("HY MicrosotTools !!!");
     close();
 
